@@ -320,22 +320,10 @@
         <h2 class="item_text">Item 9</h2>
         <div class="Parts">
           <div class="parts_div">
-            <div class="item3_value_div" style="border-top-left-radius: 5px;">
-              <p class="item3_part_text">Total length of chain : </p>
-            </div>
-            <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item9_l" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
-          </div>
-          <div class="parts_div">
-            <div class="item3_value_div">
-              <p class="item3_part_text">Hanging height : </p>
-            </div>
-            <input class="item3_value_box" type="number" id="item9_h" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
-          </div>
-          <div class="parts_div">
-            <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+            <div class="item3_value_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
               <p class="item3_part_text">Weight density : </p>
             </div>
-            <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item9_d" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            <input class="item3_value_box" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px;" type="number" id="item9_d" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
           </div>
         </div>
         <button class="solve_buttons" onclick="item9()">Solve</button>
@@ -741,10 +729,8 @@
       document.getElementById("item8_part_a").value = w + "*10^10"
     }
     function item9() {
-      var l = document.getElementById("item9_l").value
-      var h = document.getElementById("item9_h").value
       var d = document.getElementById("item9_d").value
-      var w = (l**2/2 - h**2/2)*d
+      var w = 4*d
       if (w/10 == (w/10).toFixed(0)) {
         document.getElementById("item9_part_a").value = w/10 + ".0*10"
       }
