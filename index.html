@@ -691,7 +691,13 @@
     function item3() {
       var mass = document.getElementById("mass").value
       var k = document.getElementById("k").value
-      var x = (2*9.8*mass/k).toFixed(1)
+      var x = (2*9.8*mass/k)
+      if (x > 1) {
+        x = x.toFixed(1)
+      }
+      else if (x < 1) {
+        x = x.toFixed(2)
+      }
       document.getElementById("item3_part_a").value = x + "m"
       document.getElementById("item3_part_a").name = x
     }
@@ -858,7 +864,7 @@
       var v = document.getElementById("itemd_v").value
 
       var a = 0.5*m*v**2 + m*9.8*d
-      a = Math.round(a/100)*100
+      a = Math.round(a/100)*-100
       if (a/10000 == (a/10000).toFixed(0)) {
         a = a/10000
         document.getElementById("itemd_part_a").value = a + ".0*10^4J"
@@ -875,7 +881,7 @@
       }
 
       var b = a/d
-      b = Math.round(b/100)*100
+      b = Math.round(b/100)*-100
       if (b/10000 == (b/10000).toFixed(0)) {
         b = b/10000
         document.getElementById("itemd_part_b").value = b + ".0*10^4N"
