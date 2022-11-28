@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HW 7</title>
+    <link rel="icon" href="kanuni2.png">
+    <link rel="stylesheet" href="hw7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="body_class">
+    <h1 class="HW">HW-7</h1>
+    <div class="Item" style="height: 1370px;"> <!-- Item 1 -->
+      <h2 class="item_text">Item 1</h2>
+      <div class="Parts">
+        <div class="image_div">
+          <div class="part_div">
+            <p class="part_text">Part A : </p>
+          </div>
+          <img src="item1_partA.png" class="image">
+        </div>
+        <div class="image_div_2" style="height: 495px;">
+          <div class="part_div">
+            <p class="part_text">Part B : </p>
+          </div>
+          <div class="image_div_inner">
+            <img src="item1_partB_1.png" class="image">
+            <img src="item1_partB_2.png" class="image" style="margin-top: 10px;">
+          </div>
+        </div>
+        <div class="image_div_2" style="height: 495px;">
+          <div class="part_div">
+            <p class="part_text">Part C : </p>
+          </div>
+          <div class="image_div_inner">
+            <img src="item1_partC_1.png" class="image">
+            <img src="item1_partC_2.png" class="image" style="margin-top: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 267px;"> <!-- Item 2 -->
+      <h2 class="item_text">Item 2</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="item2_part_a" value="mg(h-2R)" name="mg(h-2R)"  disabled="disabled">
+          <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy_name(this); copied(this);" id="copy_button_1" name="item2_part_a copy_1">Copy</button>
+          <input class="hidden_box" id="copy_1" value="Copy"/>
+        </div>
+        <div class="image_div_3">
+          <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+            <p class="part_text" style="margin-top: 22.5px;">Part B : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="item2_partB.png" class="image_2">
+          </div>
+          <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_2" name="item2_part_b copy_2" value="@DIV{5R;2}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_2" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 215px; margin-bottom: 120px;"> <!-- Item 3 -->
+      <h2 class="item_text">Item 3</h2>
+      <div class="Parts">
+        <div class="image_div_3">
+          <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+            <p class="part_text" style="margin-top: 22.5px;">Part A : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="item3_partA.png" class="image_2">
+          </div>
+          <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_3" name="item3_part_a copy_3" value="@DIV{9v;7}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_3" value="Copy"/>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function copy_default(btn) {
+      var text_id = btn.name.substr(13, 6)
+      document.getElementById(text_id).value = "Copy"
+      document.getElementById(text_id).style.width = "35px"
+    }
+    function copy(btn){
+      var text_id = btn.name.substr(0, 12)
+      var text = document.getElementById(text_id)
+      text.select()
+      navigator.clipboard.writeText(text.value)
+    }
+    function copy_name(btn){
+      var text_id = btn.name.substr(0, 12)
+      var text = document.getElementById(text_id)
+      text.select()
+      navigator.clipboard.writeText(text.name)
+    }
+    function copied(btn) {
+      var text_id = btn.name.substr(13, 6)
+      document.getElementById(text_id).value = "Copied"
+      document.getElementById(text_id).style.width = "45px"
+    }
+    function copy_directly(btn) {
+      navigator.clipboard.writeText(btn.value)
+    }
+  </script>
+</html>
