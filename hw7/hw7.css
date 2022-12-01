@@ -169,6 +169,118 @@
   border-radius: 5px;
   border: none;  
 }
+.item3_value_box {
+  margin: 0;
+  padding: 0;
+  width: 155px;
+  height: 58px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(176, 229, 190);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+.item3_part_text {
+  width: 245px;
+  height: 50px;
+  border: none;
+  margin-top: 17.5px;
+  margin-bottom: 0px;
+  display: inline-block;
+  font-family: Noto Sans;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(100, 100, 100);
+}
+.item3_value_div {
+  width: 260px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.solve_buttons {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  width:445px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+}
+.solve_buttons:hover {
+  background-color: rgb(176, 229, 190);
+  color: rgb(52,168,83);
+}
+.solve_buttons:active {
+  background-color: rgb(52,168,83);
+  color: whitesmoke;
+}
+.value_box {
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(176, 229, 190);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+.value_div {
+  width: 115px;
+  height: 52px;
+  display: inline-block;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.unit_box_s {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 50px;
+  padding-left: 1px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(176, 229, 190);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+.unit_box_m {
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  height: 50px;
+  padding-left: 1px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(176, 229, 190);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
 
 /* Hidden Copy Boxes */
 
@@ -188,5 +300,227 @@
   visibility: hidden;
 }
 #copy_button_3:hover + #copy_3 {
+  visibility: visible;
+}
+#copy_4 {
+  visibility: hidden;
+}
+#copy_button_4:hover + #copy_4 {
+  visibility: visible;
+}
+#copy_5 {
+  visibility: hidden;
+}
+#copy_button_5:hover + #copy_5 {
+  visibility: visible;
+}
+#copy_6 {
+  visibility: hidden;
+}
+#copy_button_6:hover + #copy_6 {
+  visibility: visible;
+}
+#copy_7 {
+  visibility: hidden;
+}
+#copy_button_7:hover + #copy_7 {
+  visibility: visible;
+}
+#copy_8 {
+  visibility: hidden;
+}
+#copy_button_8:hover + #copy_8 {
+  visibility: visible;
+}
+#copy_9 {
+  visibility: hidden;
+}
+#copy_button_9:hover + #copy_9 {
+  visibility: visible;
+}
+#copy_a {
+  visibility: hidden;
+}
+#copy_button_a:hover + #copy_a {
+  visibility: visible;
+}
+#copy_b {
+  visibility: hidden;
+}
+#copy_button_b:hover + #copy_b {
+  visibility: visible;
+}
+#copy_c {
+  visibility: hidden;
+}
+#copy_button_c:hover + #copy_c {
+  visibility: visible;
+}
+#copy_d {
+  visibility: hidden;
+}
+#copy_button_d:hover + #copy_d {
+  visibility: visible;
+}
+#copy_e {
+  visibility: hidden;
+}
+#copy_button_e:hover + #copy_e {
+  visibility: visible;
+}
+#copy_f {
+  visibility: hidden;
+}
+#copy_button_f:hover + #copy_f {
+  visibility: visible;
+}
+#copy_e {
+  visibility: hidden;
+}
+#copy_button_e:hover + #copy_e {
+  visibility: visible;
+}
+#copy_g {
+  visibility: hidden;
+}
+#copy_button_g:hover + #copy_g {
+  visibility: visible;
+}
+#copy_h {
+  visibility: hidden;
+}
+#copy_button_h:hover + #copy_h {
+  visibility: visible;
+}
+#copy_i {
+  visibility: hidden;
+}
+#copy_button_i:hover + #copy_i {
+  visibility: visible;
+}
+#copy_j {
+  visibility: hidden;
+}
+#copy_button_j:hover + #copy_j {
+  visibility: visible;
+}
+#copy_k {
+  visibility: hidden;
+}
+#copy_button_k:hover + #copy_k {
+  visibility: visible;
+}
+#copy_l {
+  visibility: hidden;
+}
+#copy_button_l:hover + #copy_l {
+  visibility: visible;
+}
+#copy_m {
+  visibility: hidden;
+}
+#copy_button_m:hover + #copy_m {
+  visibility: visible;
+}
+#copy_n {
+  visibility: hidden;
+}
+#copy_button_n:hover + #copy_n {
+  visibility: visible;
+}
+#copy_o {
+  visibility: hidden;
+}
+#copy_button_o:hover + #copy_o {
+  visibility: visible;
+}
+#copy_p {
+  visibility: hidden;
+}
+#copy_button_p:hover + #copy_p {
+  visibility: visible;
+}
+#copy_r {
+  visibility: hidden;
+}
+#copy_button_r:hover + #copy_r {
+  visibility: visible;
+}
+#copy_s {
+  visibility: hidden;
+}
+#copy_button_s:hover + #copy_s {
+  visibility: visible;
+}
+#copy_t {
+  visibility: hidden;
+}
+#copy_button_t:hover + #copy_t {
+  visibility: visible;
+}
+#copy_u {
+  visibility: hidden;
+}
+#copy_button_u:hover + #copy_u {
+  visibility: visible;
+}
+#copy_v {
+  visibility: hidden;
+}
+#copy_button_v:hover + #copy_v {
+  visibility: visible;
+}
+#copy_y {
+  visibility: hidden;
+}
+#copy_button_y:hover + #copy_y {
+  visibility: visible;
+}
+#copy_z {
+  visibility: hidden;
+}
+#copy_button_z:hover + #copy_z {
+  visibility: visible;
+}
+#copy_α {
+  visibility: hidden;
+}
+#copy_button_α:hover + #copy_α {
+  visibility: visible;
+}
+#copy_β {
+  visibility: hidden;
+}
+#copy_button_β:hover + #copy_β {
+  visibility: visible;
+}
+#copy_γ {
+  visibility: hidden;
+}
+#copy_button_γ:hover + #copy_γ {
+  visibility: visible;
+}
+#copy_ε {
+  visibility: hidden;
+}
+#copy_button_ε:hover + #copy_ε {
+  visibility: visible;
+}
+#copy_ζ {
+  visibility: hidden;
+}
+#copy_button_ζ:hover + #copy_ζ {
+  visibility: visible;
+}
+#copy_η {
+  visibility: hidden;
+}
+#copy_button_η:hover + #copy_η {
+  visibility: visible;
+}
+#copy_θ {
+  visibility: hidden;
+}
+#copy_button_θ:hover + #copy_θ {
   visibility: visible;
 }
