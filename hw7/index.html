@@ -756,10 +756,10 @@
       document.getElementById("itemd_part_b").value = Math.round(b/100)/10 + "*10^3"
 
       v0 = t
-      c = m*(va**2 - v0**2)/4
+      c = m*(va**2 - v0**2)/(2*ta)
       document.getElementById("itemd_part_c").value = Math.round(c)
 
-      d = m*(vb**2 - va**2)/4
+      d = m*(vb**2 - va**2)/(2*(tb - ta))
       document.getElementById("itemd_part_d").value = Math.round(d/100)/10 + "*10^3"
     }
     function item15() {
