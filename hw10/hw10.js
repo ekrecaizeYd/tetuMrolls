@@ -136,7 +136,12 @@ function item8() {
 
   p = l*2*pi/t
 
-  l = Math.round(l/10)*10
+  if (l > 1000) {
+    l = Math.round(l/100)*100
+  }
+  else {
+    l = Math.round(l/10)*10
+  }
   
   if (p > 1000) {
     p = Math.round(p/100)*100
