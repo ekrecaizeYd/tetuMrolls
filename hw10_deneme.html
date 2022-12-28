@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HW 10</title>
+    <link rel="icon" href="images/Abdulaziz.png">
+    <link rel="stylesheet" href="hw10_deneme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="body_class">
+    <div class="Items">
+      <div>
+        <h1 class="HW">HW-10</h1>
+        <div class="Item" style="height: 329px;"> <!-- Item 1 -->
+          <h2 class="item_text">Item 1</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">w : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" type="number" id="item1_w" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item1()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="number" id="item1_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_1" name="item1_part_a copy_1">Copy</button>
+              <input class="hidden_box" id="copy_1" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 345px;"> <!-- Item 2 -->
+          <h2 class="item_text">Item 2</h2>
+          <div class="Parts">
+            <div class="image_div_4">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 120px; width: 105px;">
+                <p class="part_text" style="margin-top: 48.5px;">Part A : </p>
+              </div>
+              <div class="image_div_triple">
+                <img src="images/item2_partA_2.png" class="image_2" style="width:200px; margin-top: 18.5px; border-radius: 3px;">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 120px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_2" name="item2_part_a copy_2" value="@DIV{\\omega@sub{0}R@Sup{2}(@DIV{M;2}+m);R@Sup{2}(@DIV{M;2}+m)-mvt(2R-vt)}">Copy</button>
+              <input class="hidden_box" style="height: 120px;" id="copy_2" value="Copy"/>
+            </div>
+            <div class="image_div_3">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+                <p class="part_text" style="margin-top: 22.5px;">Part B : </p>
+              </div>
+              <div class="image_div_double">
+                <img src="images/item2_partB_2.png" class="image_2">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_3" name="item2_part_b copy_3" value="@DIV{M+2m;M}\\omega@sub{0}">Copy</button>
+              <input class="hidden_box" style="height: 75px;" id="copy_3" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 509px;"> <!-- Item 3 -->
+          <h2 class="item_text">Item 3</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px;">
+                <p class="item3_part_text">m<sub>person</sub> : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item3_m" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">Diameter : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item3_d" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">I : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item3_i" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">v<sub>person</sub> : </p>
+              </div>
+              <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item3_v" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item3()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="number" id="item3_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_4" name="item3_part_a copy_4">Copy</button>
+              <input class="hidden_box" id="copy_4" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 321px;"> <!-- Item 4 -->
+          <h2 class="item_text">Item 4</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="value_div" style="border-top-left-radius: 5px; border-top-right-radius: 5px; width: 135px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; width: 135px;">
+                <p class="part_text">F (kN) : </p>
+              </div>
+              <input class="value_box" style="border-top-left-radius: 5px; width: 90px; border-bottom-left-radius: 5px;" type="number" id="item4_fi" placeholder=0 onblur="textbox_default(this); textbox_default(item4_fi_unit)" onclick="textbox_underline(this); textbox_underline(item4_fi_unit)">
+              <input class="unit_box_s" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" type="number" id="item4_fi_unit" placeholder="&icirc;" disabled="disabled">
+              <input class="value_box" style="border-top-left-radius: 5px; width: 90px; border-bottom-left-radius: 5px;" type="number" id="item4_fj" placeholder=0 onblur="textbox_default(this); textbox_default(item4_fj_unit)" onclick="textbox_underline(this); textbox_underline(item4_fj_unit)">
+              <input class="unit_box_s" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" type="number" id="item4_fj_unit" placeholder="&jcirc;" disabled="disabled">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item4()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="text" id="item4_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_5" name="item4_part_a copy_5">Copy</button>
+              <input class="hidden_box" id="copy_5" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 569px;"> <!-- Item 5 -->
+          <h2 class="item_text">Item 5</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px;">
+                <p class="item3_part_text">Lenght of the stick : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item5_l" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">m<sub>stick</sub> (gram) : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item5_ms" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">m<sub>bullet</sub> (gram) : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item5_mb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">v<sub>bullet</sub> : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item5_vb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">v&#8242;<sub>bullet</sub> : </p>
+              </div>
+              <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item5_vpb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item5()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="text" id="item5_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_6" name="item5_part_a copy_6">Copy</button>
+              <input class="hidden_box" id="copy_6" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 561px;"> <!-- Item 6 -->
+          <h2 class="item_text">Item 6</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px;">
+                <p class="item3_part_text">m<sub>beam</sub> : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item6_mb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">Lenght of the beam : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item6_l" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">v<sub>beam</sub> : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item6_vb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">m<sub>man</sub> : </p>
+              </div>
+              <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item6_mm" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item6()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="number" id="item6_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_7" name="item6_part_a copy_7">Copy</button>
+              <input class="hidden_box" id="copy_7" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div" style="border-bottom-left-radius: 5px;">
+                <p class="part_text">Part B : </p>
+              </div>
+              <input class="text_box" type="number" id="item6_part_b" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_8" name="item6_part_b copy_8">Copy</button>
+              <input class="hidden_box" id="copy_8" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 509px;"> <!-- Item 7 -->
+          <h2 class="item_text">Item 7</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px;">
+                <p class="item3_part_text">r : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item7_r" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">M : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item7_M" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">F (Part A) : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item7_F" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">Angle (Part A) : </p>
+              </div>
+              <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item7_Ang" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item7()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="text" id="item7_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_9" name="item7_part_a copy_9">Copy</button>
+              <input class="hidden_box" id="copy_9" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 673px;"> <!-- Item 8 -->
+          <h2 class="item_text">Item 8</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px;">
+                <p class="item3_part_text">Radius : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px;" type="number" id="item8_r" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">v<sub>1</sub> : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item8_v1" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">v<sub>2</sub> : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item8_v2" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div">
+                <p class="item3_part_text">m<sub>water</sub> (Part A) : </p>
+              </div>
+              <input class="item3_value_box" type="number" id="item8_m" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">t (Part C) : </p>
+              </div>
+              <input class="item3_value_box" style="border-bottom-right-radius: 5px;" type="number" id="item8_t" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item8()">Solve</button>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px;">
+                <p class="part_text">Part A : </p>
+              </div>
+              <input class="text_box" type="number" id="item8_part_a" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_a" name="item8_part_a copy_a">Copy</button>
+              <input class="hidden_box" id="copy_a" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">Part B : </p>
+              </div>
+              <input class="text_box" type="number" id="item8_part_b" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_b" name="item8_part_b copy_b">Copy</button>
+              <input class="hidden_box" id="copy_b" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div" style="border-bottom-left-radius: 5px;">
+                <p class="part_text">Part C : </p>
+              </div>
+              <input class="text_box" type="number" id="item8_part_c" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_c" name="item8_part_c copy_c">Copy</button>
+              <input class="hidden_box" id="copy_c" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 1632px;"> <!-- Item 9 -->
+          <h2 class="item_text">Item 9</h2>
+          <div class="Parts">
+            <div class="parts_div">
+              <div class="item3_value_div" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <p class="item3_part_text">Height of the tower : </p>
+              </div>
+              <input class="item3_value_box" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" type="number" id="item9_l" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+            </div>
+          </div>
+          <button class="solve_buttons" onclick="item9()">Solve</button>
+          <div class="Parts">
+            <div class="image_div_2" style="height: 815px; width: 445px;">
+              <div class="part_div">
+                <p class="part_text" style="width: 85px;">Example : </p>
+              </div>
+              <div class="image_div_inner">
+                <img src="images/item9_partA.png" class="image">
+                <img src="images/item9_partA_2.png" class="image" style="margin-top: 10px;">
+              </div>
+            </div>
+            <div class="parts_div">
+              <div class="part_div" style="border-top-left-radius: 5px;">
+                <p class="part_text">1-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_0" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-top-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_d" name="item9_part_0 copy_d">Copy</button>
+              <input class="hidden_box" id="copy_d" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">2-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_1" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_e" name="item9_part_1 copy_e">Copy</button>
+              <input class="hidden_box" id="copy_e" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">3-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_2" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_f" name="item9_part_2 copy_f">Copy</button>
+              <input class="hidden_box" id="copy_f" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">4-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_3" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_g" name="item9_part_3 copy_g">Copy</button>
+              <input class="hidden_box" id="copy_g" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">5-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_4" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_h" name="item9_part_4 copy_h">Copy</button>
+              <input class="hidden_box" id="copy_h" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">6-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_5" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_i" name="item9_part_5 copy_i">Copy</button>
+              <input class="hidden_box" id="copy_i" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">7-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_6" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_j" name="item9_part_6 copy_j">Copy</button>
+              <input class="hidden_box" id="copy_j" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">8-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_7" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_k" name="item9_part_7 copy_k">Copy</button>
+              <input class="hidden_box" id="copy_k" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div">
+                <p class="part_text">9-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_8" value=0 disabled="disabled">
+              <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_l" name="item9_part_8 copy_l">Copy</button>
+              <input class="hidden_box" id="copy_l" value="Copy"/>
+            </div>
+            <div class="parts_div">
+              <div class="part_div" style="border-bottom-left-radius: 5px;">
+                <p class="part_text">10-y : </p>
+              </div>
+              <input class="text_box" type="text" id="item9_part_9" value=0 disabled="disabled">
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px;" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_m" name="item9_part_9 copy_m">Copy</button>
+              <input class="hidden_box" id="copy_m" value="Copy"/>
+            </div>
+          </div>
+        </div>
+        <div class="Item" style="height: 850px; margin-bottom: 120px;"> <!-- Item 10 -->
+          <h2 class="item_text">Item 10</h2>
+          <div class="Parts">
+            <div class="image_div_3">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+                <p class="part_text" style="margin-top: 22.5px;">Part A : </p>
+              </div>
+              <div class="image_div_double">
+                <img src="images/item10_partA.png" class="image_2">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_n" name="itema_part_a copy_n" value="@DIV{m@sub{p}v@sub{0};m@sub{p}+m@sub{s}}">Copy</button>
+              <input class="hidden_box" style="height: 75px;" id="copy_n" value="Copy"/>
+            </div>
+            <div class="image_div_3">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+                <p class="part_text" style="margin-top: 22.5px;">Part B : </p>
+              </div>
+              <div class="image_div_double">
+                <img src="images/item10_partB.png" class="image_2">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_o" name="itema_part_b copy_o" value="@DIV{m@sub{s}D;m@sub{p}+m@sub{s}}">Copy</button>
+              <input class="hidden_box" style="height: 75px;" id="copy_o" value="Copy"/>
+            </div>
+            <div class="image_div_3">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+                <p class="part_text" style="margin-top: 22.5px;">Part C : </p>
+              </div>
+              <div class="image_div_double">
+                <img src="images/item10_partC.png" class="image_2">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_p" name="itema_part_c copy_p" value="@DIV{v@sub{0}Dm@sub{p}m@sub{s};m@sub{p}+m@sub{s}}">Copy</button>
+              <input class="hidden_box" style="height: 75px;" id="copy_p" value="Copy"/>
+            </div>
+            <div class="image_div_3">
+              <div class="part_div" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px; height: 75px; width: 105px;">
+                <p class="part_text" style="margin-top: 22.5px;">Part D : </p>
+              </div>
+              <div class="image_div_double">
+                <img src="images/item10_partD.png" class="image_2" style="height:55px;">
+              </div>
+              <button class="copy_buttons" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px; height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_r" name="itema_part_d copy_r" value="@DIV{v@sub{0}Dm@sub{p}m@sub{s};I@sub{0}(m@sub{p}+m@sub{s})+m@sub{p}m@sub{s}D@Sup{2}}">Copy</button>
+              <input class="hidden_box" style="height: 75px;" id="copy_r" value="Copy"/>
+            </div>
+            <div class="image_div_2" style="width: 445px; height: 370px;">
+              <div class="part_div">
+                <p class="part_text">Part E : </p>
+              </div>
+              <img src="images/item10_partE.png" class="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pearson_div">
+        <iframe class="pearson" src="https://login.pearson.com/v1/piapi/piui/signin?client_id=dN4bOBG0sGO9c9HADrifwQeqma5vjREy"></iframe>
+      </div>
+    </div>
+  </body>
+  <script type = "text/javascript" src="hw10_deneme.js"></script>
+</html>
